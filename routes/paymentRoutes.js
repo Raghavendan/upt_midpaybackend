@@ -55,7 +55,7 @@ router.post("/initiate", async (req, res) => {
       PaymentDate: paymentDate,
       ContactNo: matchedUser.mobile,
       EmailId: matchedUser.email,
-      CallbackURL: "https://nonseam-pay.onrender.com/transaction",
+      CallbackURL: "https://nonseam-pay.onrender.com/api/payments",
       IntegrationType: "seamless",
       adf1: "NA",
       adf2: "NA",
